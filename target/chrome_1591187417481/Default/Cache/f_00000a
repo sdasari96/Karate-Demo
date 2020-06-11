@@ -1,0 +1,601 @@
+
+
+
+
+ 
+
+
+<!doctype html>
+<!--[if lt IE 9]>
+    <script src="/reliance-webpay/v1.0/js/html5shiv.js"></script>
+	<script src="/reliance-webpay/v1.0/js/respond.min.js"></script>
+<![endif]-->
+
+<html class="">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="Content-Security-Policy" content="block-all-mixed-content">
+	<meta http-equiv="X-Frame-Options" content="deny">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" CONTENT="-1">
+	<script type="text/javascript">
+       history.forward();       
+     </script> 
+	<title>JioMoney Payment Gateway</title>
+	<!-- Feature phone css -->		
+		
+	
+			
+			
+				<link rel="stylesheet" href="/reliance-webpay/v1.0/css/fp-style.min.css">
+				<link href="/reliance-webpay/v1.0/css/framework2.css" rel="stylesheet" type="text/css">				
+			    <link href="/reliance-webpay/v1.0/css/framework1.min.css" rel="stylesheet" type="text/css">
+			    <link href="/reliance-webpay/v1.0/css/jiopayments-servicecall.min.css?v=2019-12-30-SIT-RELEASE" rel="stylesheet"/>
+			    <link href="/reliance-webpay/v1.0/css/responsive.min.css?v=2019-12-30-SIT-RELEASE" rel="stylesheet"/>				    
+			
+	
+	<link rel="icon" href="/reliance-webpay/images/favicon.ico">
+   	<link rel="shortcut icon" href="/reliance-webpay/images/merchant-favicon.png" type="image/x-icon">
+			
+	 		
+	
+	
+	
+	<script>
+window.location.hash="1";
+//window.location.hash="2";//again because google chrome don't insert first hash into history
+window.onhashchange=function(){window.location.hash="1";}
+</script>
+	
+	 
+</head>
+<body onload="changeHashOnLoad();">
+	
+	<div class="wrap">
+	<header class="header">  
+	
+	   
+			
+			    
+								
+				
+				
+			
+			<img
+			src="/reliance-webpay/v1.0/images/logo_jiomobile.png" class="logojio">
+		<a href="javascript:void(0)" id="cancelBtn" class="bt_back"><i class="leftArrow"></i><span>Back</span></a>
+		<p class="amt">
+			<span>&#8377; </span>1.00
+		</p>
+		<p class="detail">Transaction ID-6E10877T14IL</p>
+		<!-- global note -->
+		 
+	</header>
+	<section class="page applycopun paymentbody" style="width:100%">
+		<div class="top txndescr">		  
+		 <p class="left txndescr">
+                <span>  Transaction Amount  </span>
+                <span>: Rs.</span> 1.00</p>
+                 <p class="right txndescr">Transaction ID : 6E10877T14IL</p>
+
+		</div>
+		<div class="top txndescr loginheader" style="display:none">		  
+			<p class="left txndescr custmobile">
+				Hello : <span></span></p>
+			<p class="right txndescr"><a class="logout">Logout</a></p>
+		</div>
+		
+		<div class="redirect" >
+				<p class="redrict"><!--<img src="images/redrication.gif">--><i class="bgGlobal bg-redrication"></i><br>You are being redirected to the respective bank for authentication.<br>Please wait....</p>
+	     </div>
+	    <div class="summary-form-content">
+	     <form id="paymentForm" action="#" method="POST">
+				
+			<input id="version" name="version" type="hidden" value=""/>
+			<input id="merchantid" name="merchantid" type="hidden" value="100001001802836"/>
+			<input id="submerchantid" name="submerchantid" type="hidden" value=""/>
+			<input id="subterminalid" name="subterminalid" type="hidden" value=""/>
+			<input id="clientid" name="clientid" type="hidden" value="10025178"/>
+			<input id="channel" name="channel" type="hidden" value="WEB"/>
+			<input id="securityId" name="securityId" type="hidden" value=""/>
+			<input id="returl" name="returl" type="hidden" value="http://10.159.20.123:8080/CentralSimulatorProd/purchaseResponse.jsp"/>
+			<input id="checksum" name="checksum" type="hidden" value="d98f978df786f651c8bb5070a31d6d1df3848a9f2f02b871a0550c6d567d4a4d"/>
+			<input id="token" name="token" type="hidden" value=""/>
+			<input id="partnerid" name="partnerid" type="hidden" value=""/>
+			<input id="cardSubType" name="cardSubType" type="hidden" value=""/>
+			<input id="failedcount" name="failedcount" type="hidden" value="0"/>
+			<input id="splittxnflag" name="splittxnflag" type="hidden" value=""/>
+			<input id="globalnote" name="globalnote" type="hidden" value=""/>
+			<input id="productdescription" name="productdescription" type="hidden" value=""/>
+			<input id="stcode" name="stcode" type="hidden" value=""/>
+			<input id="invoiceno" name="invoiceno" type="hidden" value=""/>	
+			<input id="ovdcapured" name="ovdcapured" type="hidden" value=""/>	
+			<input id="ssConFlag" name="ssConFlag" type="hidden" value=""/>	
+			<input id="txntstoken" name="txntstoken" type="hidden" value="Pm5kMMf9jtxm-0ppQXsQXXguBeNQT5fUxnhUZjdojInepw1X0i0WlkdxXlluxNqcJfBEjoMfepdbyDx-Q_yyTA"/>
+			<input id="newsignupmids" name="newsignupmids" type="hidden" value=""/>
+			<input id="allwcustspinpchs" name="allwcustspinpchs" type="hidden" value="true"/>
+			<input id="extref" name="transaction.extref" type="hidden" value="6E10877T14IL"/>
+			<input id="intref" name="transaction.intref" type="hidden" value="401030879480"/>
+			<input id="transaction.timestamp" name="transaction.timestamp" type="hidden" value="20200603180030"/>
+			<input id="txntype" name="transaction.txntype" type="hidden" value="PURCHASE"/>
+			<input id="actualAmount" name="transaction.amount" type="hidden" value="1.00"/>
+			
+			
+			<input id="transaction.splitdetails" name="transaction.splitdetails" type="hidden" value=""/>
+			<input id="transaction.splitdetailswithrrn" name="transaction.splitdetailswithrrn" type="hidden" value=""/>
+			
+			<input id="transaction.conFee" name="transaction.conFee" type="hidden" value=""/>
+			<input id="transaction.netAmount" name="transaction.netAmount" type="hidden" value=""/>
+			<input id="transaction.merchantShare" name="transaction.merchantShare" type="hidden" value=""/>
+			<input id="transaction.totalServiceTax" name="transaction.totalServiceTax" type="hidden" value=""/>
+			<input id="transaction.serviceTaxAmt1" name="transaction.serviceTaxAmt1" type="hidden" value=""/>
+			<input id="transaction.serviceTaxAmt2" name="transaction.serviceTaxAmt2" type="hidden" value=""/>
+			<input id="transaction.serviceTaxAmt3" name="transaction.serviceTaxAmt3" type="hidden" value=""/>
+			<input id="transaction.serviceTaxAmt4" name="transaction.serviceTaxAmt4" type="hidden" value=""/>
+			<input id="transaction.cgstpercentage" name="transaction.cgstpercentage" type="hidden" value=""/>
+			<input id="transaction.sgstpercentage" name="transaction.sgstpercentage" type="hidden" value=""/>
+			<input id="transaction.ugstpercentage" name="transaction.ugstpercentage" type="hidden" value=""/>
+			<input id="transaction.igstpercentage" name="transaction.igstpercentage" type="hidden" value=""/>
+			<input id="transaction.apiLoadAmt" name="transaction.apiLoadAmt" type="hidden" value=""/>
+			<input id="tomobile" name="transaction.tomobile" type="hidden" value=""/> 
+			<input id="descr" name="transaction.descr" type="hidden" value=""/> 
+			<input id="transaction.feeamount" name="transaction.feeamount" type="hidden" value=""/>
+			<input id="transaction.currency" name="transaction.currency" type="hidden" value="INR"/>
+			<input id="loadAmount" name="transaction.loadamount" type="hidden" value=""/>
+			<input id="custid" name="subscriber.customerid" type="hidden" value="123456"/>
+			<input id="subCustName" name="subscriber.customername" type="hidden" value="Sneha Dasari"/>
+			<input id="subscriber.email" name="subscriber.email" type="hidden" value=""/>
+			<input id="mobilenumber" name="subscriber.mobilenumber" type="hidden" value="9324739689"/>
+			<input id="subscriber.city" name="subscriber.city" type="hidden" value=""/>
+			<input id="subscriber.state" name="subscriber.state" type="hidden" value=""/>
+			<input id="subscriber.zipcode" name="subscriber.zipcode" type="hidden" value=""/>
+			<input id="subscriber.addline1" name="subscriber.addline1" type="hidden" value=""/>
+			<input id="subscriber.addline2" name="subscriber.addline2" type="hidden" value=""/>
+			<input id="subscriber.requestCustID" name="subscriber.requestCustID" type="hidden" value="123456"/>
+			
+			<input id="subscriber.consentflag" name="subscriber.consentflag" type="hidden" value=""/>
+			<input id="subscriber.dsbaccountnumber" name="subscriber.dsbaccountnumber" type="hidden" value=""/>
+			<input id="subscriber.jiocardnum" name="subscriber.jiocardnum" type="hidden" value=""/>
+			<input id="subscriber.expmon" name="subscriber.expmon" type="hidden" value=""/>
+			<input id="subscriber.expyr" name="subscriber.expyr" type="hidden" value=""/>
+              
+			<!-- Test Transactions -->			
+			<input id="envtype" name="env" type="hidden" value=""/>
+			<input id="sourcesystem" name="sourcesystem" type="hidden" value=""/>
+			<input id="sourceid" name="sourceid" type="hidden" value=""/>
+			<input id="usejiobal" name="usejiobal" type="hidden" value=""/> 
+			<input id="isClickable" name="isClickable" type="hidden" value="Y"/>			
+			<input id="mlogoname" name="mlogoname" type="hidden" value=""/> 
+			<input id="mcssname" name="mcssname" type="hidden" value=""/> 
+			
+			<input id="billinginfo.billerid" name="billinginfo.billerid" type="hidden" value=""/>
+			<input id="billinginfo.billid" name="billinginfo.billid" type="hidden" value=""/>
+			<input id="billinginfo.billername" name="billinginfo.billername" type="hidden" value=""/>
+			<input id="billinginfo.authenticator1" name="billinginfo.authenticator1" type="hidden" value=""/>
+			<input id="billinginfo.authenticator2" name="billinginfo.authenticator2" type="hidden" value=""/>
+			<input id="billinginfo.authenticator3" name="billinginfo.authenticator3" type="hidden" value=""/>
+			<input id="billinginfo.authenticator4" name="billinginfo.authenticator4" type="hidden" value=""/>
+			<input id="billinginfo.authenticator5" name="billinginfo.authenticator5" type="hidden" value=""/>
+			<input id="billinginfo.authenticator6" name="billinginfo.authenticator6" type="hidden" value=""/>
+			<input id="billinginfo.authenticator7" name="billinginfo.authenticator7" type="hidden" value=""/>
+			<input id="billinginfo.paymenttype" name="billinginfo.paymenttype" type="hidden" value=""/>
+			<input id="billinginfo.bankmsg" name="billinginfo.bankmsg" type="hidden" value=""/>
+			<input id="billinginfo.billdetail" name="billinginfo.billdetail" type="hidden" value=""/>
+			<input id="billinginfo.addionaltags" name="billinginfo.addionaltags" type="hidden" value=""/>
+			<input id="billinginfo.paymentid" name="billinginfo.paymentid" type="hidden" value=""/>
+			
+			<input id="uitype" name="uitype" type="hidden" value="/v1.0/jiopayments"/>
+			<input id="paymenttype" name="paymenttype" type="hidden" value="PG"/>
+			<input id="orgextref" name="transaction.orgextref" type="hidden" value=""/>
+			
+			<input id="defaultpay" name="preferences.defaultpaymode" type="hidden" value=""/>
+			<input id="incPayModes" name="preferences.includepaymodes" type="hidden" value=""/>
+			<input id="excPayModes" name="preferences.excludepaymodes" type="hidden" value=""/>
+			<input id="optedpaymodes" name="preferences.finalpaymodes" type="hidden" value="CC-V|CC-M|CC-A|DC-V|DC-M|DC-MO|DC-R|NB|JM|UPI"/>
+			<input id="preferences.retrycount" name="preferences.retrycount" type="hidden" value=""/>
+			<input id="ctms" name="preferences.cardTrustedMerchants" type="hidden" value="N"/>
+			<input id="efcs" name="preferences.enableForCommonSavedCards" type="hidden" value="N"/>
+			<input id="prevtxnresponse" name="prevtxnresponse" type="hidden" value=""/>
+			
+			<input id="client.ipaddress" name="client.ipaddress" type="hidden" value=""/>
+			<input id="client.macaddress" name="client.macaddress" type="hidden" value=""/>
+			<input id="client.deviceid" name="client.deviceid" type="hidden" value=""/>	
+			<input id="client.devicetype" name="client.devicetype" type="hidden" value="DESKTOP"/>
+			
+			<input id="udf1" name="udf1" type="hidden" value=""/>
+			<input id="udf2" name="udf2" type="hidden" value=""/>
+			<input id="udf3" name="udf3" type="hidden" value=""/>
+			<input id="udf4" name="udf4" type="hidden" value=""/>
+			<input id="udf5" name="udf5" type="hidden" value=""/>	
+			<input id="merchantname" name="merchantname" type="hidden" value=""/>	
+			<input id="si_flag" name="si_flag" type="hidden" value=""/>	
+			<input id="isAutoSipTxn" name="isAutoSipTxn" type="hidden" value=""/>	
+			<input id="secureMerchantFlag" name="secureMerchantFlag" type="hidden" value="false"/>						
+            <input id="loadMoneyAsync" name="loadMoneyAsync" type="hidden" value="false"/>	
+            
+            <input id="siproductid" name="autopayinfo.si_product_id" type="hidden" value=""/>
+			<input id="autopayinfo.si_expiry_date" name="autopayinfo.si_expiry_date" type="hidden" value=""/>
+			<input id="sicustomerid" name="autopayinfo.si_customer_id" type="hidden" value=""/>
+			<input id="autopayinfo.si_frequency" name="autopayinfo.si_frequency" type="hidden" value=""/>
+			<input id="autopayinfo.si_product_desc" name="autopayinfo.si_product_desc" type="hidden" value=""/>
+			<input id="autopayinfo.si_amount_type" name="autopayinfo.si_amount_type" type="hidden" value=""/>
+			<input id="autopayinfo.si_max_amount" name="autopayinfo.si_max_amount" type="hidden" value=""/>
+			
+			<input id="jm_acct_type" name="jm_acct_type" type="hidden" value=""/>
+			<input id="collectLinkRequest" name="collectLinkRequest" type="hidden" value="false"/>
+			<input id="collLinkMerchantId" name="collLinkMerchantId" type="hidden" value=""/>
+			<input id="deviceInfo" name="deviceInfo" type="hidden" value=""/>
+				<input id="seed" name="jioWallet.seed" type="hidden" value="CdgrNcPDFt1nQamYNw97eQ=="/>
+		<input type="hidden" name="as_sfid" value="AAAAAAXeO41wI4GBRvnNySr-gMsqRdAxqXDX3efb58DjqeofmFDfhw64K0JKvjixNOd6759poFkM1XUNKA74jhBGap-kLO7V3UucVxAvDMZn7vQA8R4peNuXsudR8GkQ5oIR5xI=" /><input type="hidden" name="as_fid" value="ae3f8be8e70980cf5329be18ef18ad9f899c0e48" /></form>
+
+			
+		
+		<!-- <div class="summary summaryoffer">
+			<p>10% Cashback on HDFC Netbanking 
+				<a href="#" class="bodylink" data-toggle="modal" data-target="#offer">More</a>
+			</p>
+		</div> -->
+				
+		<div class="error-content">
+		
+		</div>
+        
+		
+		
+		
+		
+		
+			
+		<div class="main-form-content col-md-12"> 
+			<nav>
+				
+				
+					<a href="javascript:void(0)" class="active staticform paymentdescr jio_vertical_align_center disabletab" data-attr-val='JM' data-sub-form-id=""
+			    
+				
+				 data-attr-url="/reliance-webpay/v1.0/newjiomoneyhome" 
+				
+				
+				
+				>JioMoney</a>
+				
+				
+				
+				    <a href="javascript:void(0)" class="staticform paymentdescr jio_vertical_align_center disabletab" data-attr-val='CC' data-sub-form-id="creditFormId"
+				  	 data-attr-url="/reliance-webpay/v1.0/creditcard/true">Credit Card</a> 
+				 
+				
+				
+									
+					<a href="javascript:void(0)" class="staticform paymentdescr jio_vertical_align_center disabletab" data-attr-val='DC' data-sub-form-id="debitFormId"
+				   		data-attr-url="/reliance-webpay/v1.0/debitcard/true">Debit Card</a>			  	
+					
+				
+				
+					<a href="javascript:void(0)" class="netbankingform active paymentdescr jio_vertical_align_center disabletab" data-attr-val='NB' data-sub-form-id="netBankingFormId"
+				   	data-attr-url="netbanking">Net Banking</a>
+				
+				 
+				
+				<!-- <a href="javascript:void(0)" class="" data-attr-url="" data-attr-val="" >Wallet</a>-->
+				<a href="javascript:void(0)" class="staticform paymentdescr jio_vertical_align_center disabletab" data-attr-url="displayupivpapage" data-attr-val="UPI" data-sub-form-id="upiFormId"><img class="img-desktop-upi" src="../v1.0/images/bhim.png"> UPI</a>
+				
+				
+			</nav>
+			
+			 <div class="mobilenav">
+			 	
+			 	<h4 style="padding-left:10px"><strong>Select Payment Option</strong></h4>
+			 	
+				
+					<div>
+						 
+						 
+							  <a href="javascript:void(0)" class="active loginform mobileJioLogin paymentdescr jio_vertical_align_center"  data-attr-val='JM' data-sub-form-id=""
+								
+				
+				data-attr-url="jiomoneylogin"
+				
+				
+				>
+								<img class="jioicon jioiconjm" src="/reliance-webpay/v1.0/images/mob_jiomoney.png">
+								<p><span class="index_jm">JioMoney</span> <span class="bt btblue imgbt"><i class="bgGlobal bg-icon_pay"></i>PAY</span></p>
+							</a>
+						 
+						
+					</div>
+				
+				
+				
+					
+						
+					  						
+							<a 	href="javascript:void(0)" class="link mobileStaticForm paymentdescr vertical_align_center" data-attr-val='CC' data-sub-form-id="creditFormId"
+								data-attr-url="/reliance-webpay/v1.0/creditcard/true">
+								<i class="bgGlobal bg-mob_card"></i>
+								<p>Credit Cards</p></a>
+						  
+				  	
+						
+				
+				
+					
+					
+				  						
+							<a	href="javascript:void(0)" class="link mobileStaticForm paymentdescr vertical_align_center" data-attr-val='DC' data-sub-form-id="debitFormId"
+								data-attr-url="/reliance-webpay/v1.0/debitcard/true">
+								<i class="bgGlobal bg-mob_card"></i>
+								<p>Debit Card</p>
+							</a>
+					
+					
+				
+				
+				
+				    
+						
+					  						
+							<a href="javascript:void(0)" class="link mobilenetbankingform paymentdescr vertical_align_center" data-attr-val='NB' data-sub-form-id="netBankingFormId"
+								data-attr-url="netbanking">
+								<i class="bgGlobal bg-mob_netbanking"></i>
+								<p>Net Banking</p>
+							</a> 
+					  	 
+				  	 
+				
+				
+				
+				
+				    
+						
+					  						
+							<a href="javascript:void(0)" class="link mobileStaticForm paymentdescr vertical_align_center" data-attr-val='UPI' data-sub-form-id="upiFormId"
+								data-attr-url="displayupivpapage">
+								<i class="bgGlobal bg-mob_upi"></i>
+								<p>UPI</p>
+							</a> 
+					  	 
+				  	 
+				
+			</div>
+			<!-- FEATURE PHONE-FP CHANGES *** START *** APRIL 10 2017  -->
+			<!--<div class="fp fp-payment fp-wrapper">
+
+					<div class="fp-header-wrapper">
+
+						<div class="fp-header">
+							<h1>Payment</h1>
+						</div>
+
+						<div class="fp-amount">
+							<div class="fp-amount-label">Amount</div>
+							<div class="fp-amount-total">&#8377; 0.00</div>
+						</div>
+
+					</div>-->
+			<div class="fp-content hidden">
+				<div class="fpMainNav">
+					
+					<h4 style="padding-left:10px"><strong>Select Payment Option</strong></h4>
+				
+				  
+				<ul> 
+					
+						<li class="active">
+						 
+						 
+							  <a href="javascript:void(0)" class="active loginform mobileJioLogin paymentdescr jio_vertical_align_center"  data-attr-val='JM' data-sub-form-id=""
+								
+										
+										data-attr-url="jiomoneylogin"
+										
+										
+										>
+								
+								<div class="fp-payment-list-icon">
+									<i class="fp-ico fp-ico-jio-money"></i>
+								</div>
+								<div class="fp-payment-list-label">JioMoney</div>
+							</a>
+							 
+						
+						</li>
+					
+					
+					
+						
+					  						
+							<li>
+							<a 	href="javascript:void(0)" class="link mobileStaticForm paymentdescr vertical_align_center" data-attr-val='CC' data-sub-form-id="creditFormId"
+								data-attr-url="/reliance-webpay/v1.0/creditcard/true">
+								<div class="fp-payment-list-icon">
+									<i class="fp-ico fp-ico-credit-card"></i>
+								</div>
+								<div class="fp-payment-list-label">Credit Card</div>
+						    </a>
+							</li>	
+						  
+				  	
+						
+				 
+				  
+					
+					
+				  	
+						<li>
+							<a	href="javascript:void(0)" class="link mobileStaticForm paymentdescr vertical_align_center" data-attr-val='DC' data-sub-form-id="debitFormId"
+								data-attr-url="/reliance-webpay/v1.0/debitcard/true">
+								
+								<div class="fp-payment-list-icon">
+									<i class="fp-ico fp-ico-debit-card"></i>
+								</div>
+								<div class="fp-payment-list-label">Debit Card</div>
+							</a>
+					 </li>			
+					
+					
+				
+				
+				    
+						
+					  		
+							<li>
+							<a href="javascript:void(0)" class="link mobilenetbankingform paymentdescr vertical_align_center" data-attr-val='NB' data-sub-form-id="netBankingFormId"
+								data-attr-url="netbanking">
+								
+								<div class="fp-payment-list-icon">
+									<i class="fp-ico fp-ico-net-banking"></i>
+								</div>
+								<div class="fp-payment-list-label">Net Banking</div>
+							</a> 
+							</li>
+					  	 
+				  	 
+				               
+                  
+               </ul>
+			 <div class="fp-footer">
+				</div>
+			</div>
+          </div>
+		
+		<!-- FEATURE PHONE-FP CHANGES *** END *** APRIL 13 2017  -->
+			<div class="static-form-content paymentbody">
+				<div class="content index">
+					
+				</div>
+		  </div>
+		  </div>
+		  </div>
+		  		 <!----- PPI guidelines ST--->
+	<div class="content card materiallabelOpen1">
+	<div class="modal-wrapper" data-modal="wrapper">
+		<div class="modal-content" style="margin: 0px auto">
+			<div class="modal-body">
+				<div class="text">
+				<form name="addovdform" id="addovdform" autocomplete="off">
+					<h4 class="modal-title">ENTER ID NUMBER</h4>
+                    <div class="modal-mrgn10">Dear customer, As per RBI guidelines, you are required to provide ID Number of document that you select below. </div>
+					 <div class="ovdSection col-sm-12 zero-left-padding">
+						<select name="" class="select ovdType" id="ovd-options">
+							<option selected value="PN" >PAN Number</option>
+						    <option value="DL" >Driving License</option>
+							<option value="PP">Passport</option>
+							<option value="VT">Voter's ID</option>
+							<option value="NG">NREGA Job Card</option>
+							<option value="NP">Letter from National Population Register</option>
+						</select>
+						<input  type="text" class="textbox icondrop validate ovdTypeVal" readonly value="PAN Number">
+					</div>
+					<input type="hidden" name="ovdType"  id="ovdType" value="PN" >
+					<input type="hidden" name="walletUidOvd" id="walletUidOvd" value=""> 
+					<input type="hidden" name="trackIdOvd" id="trackIdOvd" value="">					
+					 <div class="col-sm-12 zero-left-padding texteffect">
+						<input name="ovdNumber" type="text" id="ovdNumber" data-error-msg="" class="textbox required ovdNumVal" maxlength="30">
+							<span class="highlight"></span>
+							<span class="bar"></span>
+							<label>Identification number</label>
+					</div>
+					<div class="row center">
+						<a class="bt btblue disableClick ovdSubmitBtn rbiGudBtn" href="javascript:void(0)" id="">Load
+							Money to wallet</a>
+					</div>
+				 <div class="row center rbiGudBackMerchant">
+				<input type="hidden" value="User cancelled on OVD page" id="errormsgovd" name="errormsg" />
+			    <a href="javascript:" id="ovdgoBackTomerchant" style="text-decoration:none"  >Go Back to Merchant</a>
+			</div>
+			<input type="hidden" name="as_sfid" value="AAAAAAW8XOQMYYjL0M_PhdScsXnwa4EHKYYO4TKUeywGCwnX_0bEodX07T3yl1B6KSTkyFv4Sz5ITaVKSnEG-v-Ocy_aH5hrGFrzRs0H4pwMVeCU980UAwQkX7hwe9hK1GKZpy0=" /><input type="hidden" name="as_fid" value="1ab866c7fd267a48ea04849d01f44723b932c116" /></form>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	</div>
+	<!----- PPI guidelines End--->
+	</section>
+	<footer class="footer"><i class="bgGlobal bg-img_footer"></i></footer>
+</div>
+	
+<div id="offer" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Note</h4>
+              <button data-dismiss="modal" class="close" style="float: right;margin-top: -23px;">&times;</button>
+      </div>
+      <div class="modal-body">
+       <!-- <p>10% on Cashback on spends of <span>Rs.</span>500 using HDFC Netbanking.<br><span>Rs.</span>50 extra on Cash on Delivery.</p>-->
+         <!--  <p><br/><br/><br/></p>-->
+              <p></p>
+      </div>
+      <div class="modal-footer" style="margin-bottom: 9px;">
+      <a href="javascript:" data-dismiss="modal" class="blue" style="padding: 0px 15px;">CLOSE</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Already Minified -->	
+			
+		
+			
+			
+				<script src="/reliance-webpay/v1.0/js/framework2.js"></script>
+				<script src="/reliance-webpay/v1.0/js/framework1.min.js"></script>				
+				<script src="/reliance-webpay/v1.0/js/jiopayments-servicecall.min.js?v=2019-12-30-SIT-RELEASE"></script>										
+			
+		
+
+<!-- Feature Phone Code Strat -->
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+         $('.mobilenav').show();
+		$('.fp-content').remove();
+	}else if( /48.0 Firefox/i.test(navigator.userAgent) ){
+		 
+		$('.mobilenav').remove();
+		$('.fp-content').show();
+		$('.fp-content').removeClass('hidden');
+	}else{
+	     $('.main-form-content').show();
+		 $('.fp-content').remove();
+	}
+});
+</script>
+<!-- Feature Phone Code END -->
+ <script type = "text/javascript">
+    function changeHashOnLoad() {
+        window.location.href += "#";
+        setTimeout("changeHashAgain()", "50");
+        setTimeout("showTextP()","50");
+    }
+    
+	function showTextP(){
+		  $('.cartitemsPG p:gt(1)').show();  
+		  $('.cartitemsPG p:gt(2)').hide();  
+		
+	}
+
+    function changeHashAgain(){          
+        window.location.href += "1";
+    }
+
+    var storedHash = window.location.hash;
+    window.setInterval(function () {
+        if (window.location.hash != storedHash) {
+			//Defect 17664: this was causing scrolling issues in IE
+			//when hash was being set to ''
+			if(storedHash!=''){
+				window.location.hash = storedHash;
+			}
+        }
+    }, 50);     
+     
+    </script>
+</body>
+</html>

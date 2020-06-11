@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-3"},{"id":2,"content":"ForkJoinPool-1-worker-2"},{"id":3,"content":"ForkJoinPool-1-worker-1"},{"id":4,"content":"ForkJoinPool-1-worker-4"},{"id":5,"content":"ForkJoinPool-1-worker-5"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"appKarate[1:12]","start":3722,"end":32482,"title":"appKarate[1:12] 05:30:03.722-05:30:32.482"},{"id":2,"group":2,"content":"dataDriven[1.1:16]","start":3722,"end":6421,"title":"dataDriven[1.1:16] 05:30:03.722-05:30:06.421 Performing Data Driven Test"},{"id":3,"group":3,"content":"javaFunctions[1:9]","start":3722,"end":3802,"title":"javaFunctions[1:9] 05:30:03.722-05:30:03.802 Performing Data Driven Test"},{"id":4,"group":4,"content":"javaFunctions[2:17]","start":3722,"end":6090,"title":"javaFunctions[2:17] 05:30:03.722-05:30:06.090 Performing Writing to data.txt"},{"id":5,"group":5,"content":"jsFunctions[1:15]","start":3722,"end":6425,"title":"jsFunctions[1:15] 05:30:03.722-05:30:06.425 Defining and Calling Javascript Functions"},{"id":6,"group":3,"content":"postUser[1:7]","start":3869,"end":9466,"title":"postUser[1:7] 05:30:03.869-05:30:09.466 Adding params"},{"id":7,"group":4,"content":"uiKarate[1.1:44]","start":6202,"end":82821,"title":"uiKarate[1.1:44] 05:30:06.202-05:31:22.821"},{"id":8,"group":5,"content":"users[1:7]","start":6471,"end":7611,"title":"users[1:7] 05:30:06.471-05:30:07.611 get all users and then get the first user by id"},{"id":9,"group":2,"content":"users[2:25]","start":6506,"end":11815,"title":"users[2:25] 05:30:06.506-05:30:11.815 create a user and then get it by id"}]);
+var container = document.getElementById('visualization');
+var timeline = new vis.Timeline(container);
+timeline.setOptions({ groupOrder: 'content' });
+timeline.setGroups(groups);
+timeline.setItems(items);
+</script>
+  </body>
+</html>

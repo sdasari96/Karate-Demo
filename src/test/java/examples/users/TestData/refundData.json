@@ -1,0 +1,18 @@
+{
+  "request": {
+    "request_header": {
+      "api_name": "REFUND",
+      "version": "3.1",
+      "timestamp": "20200528200628"
+    },
+    "checksum": "95c84afb2edf062411422de5fcff15988033ad35d91e96fc1b575e6b30937d51",
+    "payload_data": {
+      "org_txn_timestamp": "20200528191315",
+      "additional_info": "NA",
+      "org_jm_tran_ref_no": "701043171157",
+      "merchant_id": "100001000001121",
+      "txn_amount": "0.01",
+      "tran_ref_no": "SNPBPXF3B4VT"
+    }
+  }
+}

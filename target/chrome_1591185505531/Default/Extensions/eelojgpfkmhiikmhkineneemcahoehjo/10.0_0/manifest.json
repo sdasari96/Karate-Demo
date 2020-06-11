@@ -1,0 +1,17 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "description": "Extension works along with Symantec Information Protection product for protecting data based on company policy",
+   "icons": {
+      "128": "Vontu_128.png",
+      "16": "Vontu_16.png",
+      "48": "Vontu_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjhEED+5lNZQBG9IT6xwfmc2ZbpmFI37yvd3vnS+DMszjbpepd4JJQlB8UkFWCKAKlPeUOiEhAbD8FswSx59pPobfT8/pY1t4KxJ7b7SQaqMBirCuOwHRfzAeWqm1BniHW9zlrJGHndudSPTdmfbLf15AP0VRCoUc86rgxXISUMS/JPXYZGynyfDoY++E+q4yepZtOyTJ0nbD6eG9e3/9zz/xLd9c9jxFkEE7JcggLU0A+sriV3s/AbenVdjjQeS3wxewNtpzkCu65eaKkKt0Yom7Rdx3ahmYl506P8dpV/4vvjr4YziD4pE0AddayGDUVtStgncSt5i9JhMVxudkWQIDAQAB",
+   "manifest_version": 2,
+   "name": "Symantec Extension",
+   "permissions": [ "nativeMessaging", "management", "activeTab", "tabs" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "10.0"
+}

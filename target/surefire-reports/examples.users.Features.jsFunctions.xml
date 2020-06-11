@@ -1,0 +1,15 @@
+<testsuite failures="0" name="examples/users/Features/jsFunctions.feature" skipped="0" tests="1" time="2.678189">
+  <testcase classname="examples.users.Features.jsFunctions" name="Defining and Calling Javascript Functions" time="2.678189">
+    <system-out>* url url ................................................................. passed
+* def payLoad = read('../TestData/postData.json') ......................... passed
+* def myFun = ............................................................. passed
+Given path 'api/users/3' .................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* def func1 = call myFun .................................................. passed
+Then print 'Function 1: ',func1 ........................................... passed
+* def myFun2 = function(){return 'I am in Single-Line Function';} ......... passed
+* def func2 = call myFun2 ................................................. passed
+Then print 'Function 2: ',func2 ........................................... passed</system-out>
+  </testcase>
+</testsuite>

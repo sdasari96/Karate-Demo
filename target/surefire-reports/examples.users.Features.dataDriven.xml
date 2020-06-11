@@ -1,0 +1,10 @@
+<testsuite failures="0" name="examples/users/Features/dataDriven.feature" skipped="0" tests="1" time="2.67618">
+  <testcase classname="examples.users.Features.dataDriven" name="Performing Data Driven Test" time="2.67618">
+    <system-out>* url url ................................................................. passed
+Given path 'api/users' .................................................... passed
+And request {name : morpheus, job : leader} ............................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And match response.name == 'morpheus' ..................................... passed</system-out>
+  </testcase>
+</testsuite>

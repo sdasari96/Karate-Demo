@@ -1,0 +1,34 @@
+<testsuite failures="1" name="examples/users/Features/uiKarate.feature" skipped="0" tests="1" time="76.613562">
+  <testcase classname="examples.users.Features.uiKarate" name="1" time="76.613562">
+    <failure message="uiKarate.feature:28 - javascript evaluation failed: retry(5,5000).click(&quot;a[class='bt btblue loginform']&quot;), wait failed for: [a[class='bt btblue loginform']] after 25030 milliseconds">* configure driver = { type: 'chrome', showDriverLog: true, httpConfig: { readTimeout: 120000 } } . passed
+* def appiumConnector = Java.type('examples.users.Features.AppiumConnector') . passed
+Given driver 'http://10.159.20.123:8080/CentralSimulatorProd/#' ........... passed
+And retry(5,2000).input('#username', 'prod') .............................. passed
+And retry(5,2000).input('#password', 'Prod@123') .......................... passed
+When retry(5,2000).click("button[id=login]") .............................. passed
+Then match text('#pg') == 'PG/PPI' ........................................ passed
+Given click("button[id=pg]") .............................................. passed
+When select('select[id=txntype]','PURCHASE') .............................. passed
+Then match text('.text-primary') == 'PG/PPI SIMULATOR' .................... passed
+Given input('#clientId',10000022) ......................................... passed
+And delay(5000).click('#merchantId') ...................................... passed
+And clear('#txnamt') ...................................................... passed
+And input('#txnamt','0.01') ............................................... passed
+And delay(5000).click('#purchasebutton') .................................. passed
+When delay(20000).value('#requestinfo').length &gt; 0 ........................ passed
+Then click('#paynow') ..................................................... passed
+And waitForUrl('https://pp2pay.jiomoney.com/reliance-webpay/v1.0/jiopayments#1') . passed
+Given retry(5,5000).click("a[class='bt btblue loginform']") ............... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: uiKarate.feature:28 - javascript evaluation failed: retry(5,5000).click("a[class='bt btblue loginform']"), wait failed for: [a[class='bt btblue loginform']] after 25030 milliseconds&#13;
+	at ✽.Given retry(5,5000).click("a[class='bt btblue loginform']") (uiKarate.feature:28)&#13;
+
+And delay(5000).input('#mobile','9324739689') ............................. skipped
+And delay(5000).click('#vmsubmitBtn') ..................................... skipped
+When waitFor('#otpns') .................................................... skipped
+Then match delay(5000).enabled("div[class='row verify-signup-block_otp']") == true . skipped
+* def otpString = appiumConnector.fetchOTP(); ............................. skipped
+Then print otpString ...................................................... skipped</failure>
+  </testcase>
+</testsuite>

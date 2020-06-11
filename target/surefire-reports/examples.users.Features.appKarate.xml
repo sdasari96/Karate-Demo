@@ -1,0 +1,19 @@
+<testsuite failures="1" name="examples/users/Features/appKarate.feature" skipped="0" tests="1" time="28.7365">
+  <testcase classname="examples.users.Features.appKarate" name="1" time="28.7365">
+    <failure message="appKarate.feature:14 - driver config / start failed: &#10;org.apache.http.conn.HttpHostConnectException: Connect to localhost:65349 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=android, target=null, udid=RZ8M51CE05A, deviceName=GALAXY A70, appPackage=com.android.chrome, appActivity=com.google.android.apps.chrome.Main, platformName=Android, platformVersion=9}">* configure driver = { type: 'android' } .................................. passed
+* def appCaps = {"udid": "RZ8M51CE05A","deviceName":"GALAXY A70","appPackage":"com.android.chrome","appActivity":"com.google.android.apps.chrome.Main","platformName":"Android","platformVersion":"9"} . passed
+* def javaFunctions = Java.type('examples.users.Runners.JavaFunctions') ... passed
+* def javaFunctionsObject = new javaFunctions(); .......................... passed
+Given driver appCaps ...................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: appKarate.feature:14 - driver config / start failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:65349 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, options: {type=android, target=null, udid=RZ8M51CE05A, deviceName=GALAXY A70, appPackage=com.android.chrome, appActivity=com.google.android.apps.chrome.Main, platformName=Android, platformVersion=9}&#13;
+	at ✽.Given driver appCaps (appKarate.feature:14)&#13;
+
+* def otp = driver.delay(10000).text('#android:id/message_text') .......... skipped
+* print otp ............................................................... skipped
+When def result = javaFunctionsObject.writeData(otp) ...................... skipped
+Then print result ......................................................... skipped</failure>
+  </testcase>
+</testsuite>

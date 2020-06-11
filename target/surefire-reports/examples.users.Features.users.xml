@@ -1,0 +1,40 @@
+<testsuite failures="0" name="examples/users/Features/users.feature" skipped="0" tests="2" time="6.444825">
+  <testcase classname="examples.users.Features.users" name="get all users and then get the first user by id" time="1.137553">
+    <system-out>* url 'https://jsonplaceholder.typicode.com' .............................. passed
+Given path 'users' ........................................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def first = response[0] ................................................. passed
+Given path 'users', first.id .............................................. passed
+When method get ........................................................... passed
+Then print 'Path is: ', path .............................................. passed
+Then status 200 ........................................................... passed
+* match first.id == 1 ..................................................... passed
+* match first.id != 2 ..................................................... passed
+* match first.name contains 'Leanne' ...................................... passed
+* match first.name !contains 'Brett' ...................................... passed</system-out>
+  </testcase>
+  <testcase classname="examples.users.Features.users" name="create a user and then get it by id" time="5.307272">
+    <system-out>* url 'https://jsonplaceholder.typicode.com' .............................. passed
+Given path 'users' ........................................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def first = response[0] ................................................. passed
+Given path 'users', first.id .............................................. passed
+When method get ........................................................... passed
+Then print 'Path is: ', path .............................................. passed
+Then status 200 ........................................................... passed
+* match first.id == 1 ..................................................... passed
+* match first.id != 2 ..................................................... passed
+* match first.name contains 'Leanne' ...................................... passed
+* match first.name !contains 'Brett' ...................................... passed
+* url 'https://jsonplaceholder.typicode.com' .............................. passed
+* def user = .............................................................. passed
+Given path '/users' ....................................................... passed
+And request user .......................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* def id = response.id .................................................... passed
+* print 'created id is: ', id ............................................. passed</system-out>
+  </testcase>
+</testsuite>

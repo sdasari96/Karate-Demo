@@ -1,0 +1,12 @@
+<testsuite failures="0" name="examples/users/Features/postUser.feature" skipped="0" tests="1" time="5.595498">
+  <testcase classname="examples.users.Features.postUser" name="Adding params" time="5.595498">
+    <system-out>* url url ................................................................. passed
+* def payLoad = read('../TestData/postData.json') ......................... passed
+Given path 'api/users' .................................................... passed
+And request payLoad ....................................................... passed
+And header Accept = 'application/json' .................................... passed
+And param delay = 3 ....................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

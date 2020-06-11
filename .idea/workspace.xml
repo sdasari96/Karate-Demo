@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5e5304d1-e4de-43ce-9aa4-d08ce91f4973" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="jdkForImporter" value="8" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="8" />
+  </component>
+  <component name="ProjectId" id="1bZXrISD1qcKeiRFukXdyVNdSz1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/examples/users/Features" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Karate-Demo\src\test\java\examples\users\Features" />
+      <recent name="C:\Karate-Demo\src\test\java\examples\users\TestData" />
+      <recent name="C:\Karate-Demo\src\test\java\examples\users" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="examples.users.Runners" />
+      <recent name="examples.users.Features" />
+      <recent name="examples" />
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Karate-Demo\src\test\java\examples\users\TestData" />
+      <recent name="C:\Karate-Demo\src\test\java\examples\users\Features" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.OpenLoopPurchaseRunner">
+    <configuration name="OpenLoopPurchaseRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Karate-Demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="examples.users.Runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="examples.users.Runners" />
+      <option name="MAIN_CLASS_NAME" value="examples.users.Runners.OpenLoopPurchaseRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PurchaseNonPCIRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Karate-Demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="examples.users.Runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="examples.users.Runners" />
+      <option name="MAIN_CLASS_NAME" value="examples.users.Runners.PurchaseNonPCIRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PurchasePCIRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Karate-Demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="examples.users.Runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="examples.users.Runners" />
+      <option name="MAIN_CLASS_NAME" value="examples.users.Runners.PurchasePCIRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RefundKarateRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Karate-Demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="examples.users.Runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="examples.users.Runners" />
+      <option name="MAIN_CLASS_NAME" value="examples.users.Runners.RefundKarateRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UIKarateRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Karate-Demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="examples.users.Runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="examples.users.Runners" />
+      <option name="MAIN_CLASS_NAME" value="examples.users.Runners.UIKarateRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.PurchaseNonPCIRunner" />
+      <item itemvalue="JUnit.UIKarateRunner" />
+      <item itemvalue="JUnit.RefundKarateRunner" />
+      <item itemvalue="JUnit.PurchasePCIRunner" />
+      <item itemvalue="JUnit.OpenLoopPurchaseRunner" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.OpenLoopPurchaseRunner" />
+        <item itemvalue="JUnit.PurchasePCIRunner" />
+        <item itemvalue="JUnit.PurchaseNonPCIRunner" />
+        <item itemvalue="JUnit.RefundKarateRunner" />
+        <item itemvalue="JUnit.UIKarateRunner" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e5304d1-e4de-43ce-9aa4-d08ce91f4973" name="Default Changelist" comment="" />
+      <created>1588840786979</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588840786979</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="280" y="31" key="#ExamplesTest" timestamp="1589475145518">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="280" y="31" key="#ExamplesTest/0.0.1366.728@0.0.1366.728" timestamp="1589475145518" />
+    <state x="275" y="22" key="#Project_Structure" timestamp="1590068423186">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1590068423186" />
+    <state x="413" y="119" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1590675715618">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="119" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1590675715618" />
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589474924589">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1589474924589" />
+    <state x="428" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588852692283">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="428" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1588852692283" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1590392977710">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590392977710" />
+    <state width="1323" height="268" key="GridCell.Tab.0.bottom" timestamp="1591798599631">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="268" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591798599631" />
+    <state width="1323" height="268" key="GridCell.Tab.0.center" timestamp="1591798599631">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="268" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591798599631" />
+    <state width="1323" height="268" key="GridCell.Tab.0.left" timestamp="1591798599631">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="268" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591798599631" />
+    <state width="1323" height="268" key="GridCell.Tab.0.right" timestamp="1591798599631">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="268" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591798599631" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1589474940814">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1589474940814" />
+    <state x="378" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1591675936497">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="378" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1591675936497" />
+    <state x="65" y="59" key="new project wizard" timestamp="1589553150930">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="59" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1589553150930" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1591188859689">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1591188859689" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Karate_Demo$ExamplesTest.ic" NAME="ExamplesTest Coverage Results" MODIFIED="1589475150434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>examples.*</FILTER>
+    </SUITE>
+  </component>
+</project>

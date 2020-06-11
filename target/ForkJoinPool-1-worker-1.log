@@ -1,0 +1,32 @@
+17:05:21.396 [print] Non Static Function: Hello
+17:05:21.404 [print] Data entered
+17:05:21.408 [print] Static Function: Static Function
+17:05:22.697 request:
+1 > POST https://reqres.in/api/users?delay=3
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 34
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_201)
+{"name":"morpheus","job":"leader"}
+
+17:05:27.052 response time in milliseconds: 4354.21
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 59763bc429b9cbdc-SIN
+1 < Connection: keep-alive
+1 < Content-Length: 83
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 22 May 2020 11:35:26 GMT
+1 < Etag: W/"53-rtgbLz4xs/DCUa+Mt6prPbeTAio"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dba0643e5dea4893c9b156ac5ab0a962c1590147323; expires=Sun, 21-Jun-20 11:35:23 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 02ddc3ae940000cbdc6901f200000001
+{"name":"morpheus","job":"leader","id":"54","createdAt":"2020-05-22T11:35:26.838Z"}
+

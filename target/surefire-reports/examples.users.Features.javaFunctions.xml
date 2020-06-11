@@ -1,0 +1,27 @@
+<testsuite failures="0" name="examples/users/Features/javaFunctions.feature" skipped="0" tests="2" time="2.408021">
+  <testcase classname="examples.users.Features.javaFunctions" name="Performing Data Driven Test" time="0.059245">
+    <system-out>* def javaFunctions = Java.type('examples.users.Runners.JavaFunctions') ... passed
+* def javaFunctionsObject = new javaFunctions(); .......................... passed
+* def result = javaFunctionsObject.nonStaticFunction("Hello"); ............ passed
+Then print result ......................................................... passed
+* def result2 = javaFunctionsObject.writeData("Entering Data") ............ passed
+Then print result2 ........................................................ passed
+* def result3 = javaFunctions.staticFunction("Static Function"); .......... passed
+Then print result3 ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="examples.users.Features.javaFunctions" name="Performing Writing to data.txt" time="2.348776">
+    <system-out>* def javaFunctions = Java.type('examples.users.Runners.JavaFunctions') ... passed
+* def javaFunctionsObject = new javaFunctions(); .......................... passed
+* def result = javaFunctionsObject.nonStaticFunction("Hello"); ............ passed
+Then print result ......................................................... passed
+* def result2 = javaFunctionsObject.writeData("Entering Data") ............ passed
+Then print result2 ........................................................ passed
+* def result3 = javaFunctions.staticFunction("Static Function"); .......... passed
+Then print result3 ........................................................ passed
+* def javaFunctions = Java.type('examples.users.Runners.JavaFunctions') ... passed
+* def javaFunctionsObject = new javaFunctions(); .......................... passed
+Given url 'https://jsonplaceholder.typicode.com/users/1' .................. passed
+When method GET ........................................................... passed
+Then javaFunctionsObject.writeData(response) .............................. passed</system-out>
+  </testcase>
+</testsuite>
